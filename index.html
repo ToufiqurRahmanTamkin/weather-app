@@ -16,6 +16,36 @@
             background-size: cover;
             height: 100vh;
         }
+        .maximum-minimum-weather-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8vh;
+        border-radius: 15px;
+      }
+      .maximum-minimum-weather h6 {
+        font-size: 20px;
+        color: #ffff;
+        padding-top: 10vh;
+      }
+
+      .maximum-minimum-weather h6 {
+        color: #ffff;
+        font-size: 20px;
+        padding: 10vh;
+      }
+
+      h4#title {
+        font-size: 17px;
+        color: #ffff;
+        margin-top: 27px;
+      }
+      li#country {
+        color: #fff;
+        padding: 13px 0;
+        font-size: 15px;
+        text-transform: capitalize;
+        font-weight: 400;
+      }
     </style>
   </head>
   <body>
@@ -44,6 +74,18 @@
         <h1 id="location">Weather</h1>
         <h3><span id="temperature">0</span>&deg; Celcius</h3>
         <h1 id="weather" class="lead"></h1>
+      </div>
+      <div class="maximum-minimum-weather-container" id="main-container">
+        <div class="maximum-minimum-weather">
+          <h6 id="maximum"></h6>
+        </div>
+        <div class="maximum-minimum-weather">
+          <h6 id="minimum"></h6>
+        </div>
+      </div>
+      <div class="top-searched-item">
+        <h4 id="title"></h4>
+        <li id="country"></li>
       </div>
     </div>
 
